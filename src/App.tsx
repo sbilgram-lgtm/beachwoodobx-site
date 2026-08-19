@@ -63,8 +63,7 @@ export default function App() {
       <nav className="nav">
         <span className="nav-brand">Beachwood<span className="nav-obx"> OBX</span></span>
         <div className="nav-links">
-          <a href={HOUFY_URL} target="_blank" rel="noreferrer" className="nav-cta">Book on Houfy</a>
-          <a href={AIRBNB_URL} target="_blank" rel="noreferrer" className="nav-cta nav-cta-secondary">Airbnb</a>
+          <a href="#book" className="nav-cta">Check Availability</a>
         </div>
       </nav>
 
@@ -84,8 +83,8 @@ export default function App() {
             ))}
           </div>
           <div className="hero-actions">
-            <a href={HOUFY_URL} target="_blank" rel="noreferrer" className="btn-primary">Book on Houfy — Lower Fees</a>
-            <a href={AIRBNB_URL} target="_blank" rel="noreferrer" className="btn-secondary">View on Airbnb</a>
+            <a href="#book" className="btn-primary">Check Availability</a>
+            <a href="#highlights" className="btn-secondary">Explore the Property</a>
           </div>
         </div>
       </section>
