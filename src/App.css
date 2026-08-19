@@ -364,6 +364,95 @@ body {
 .footer a { color: rgba(255,255,255,0.75); text-decoration: none; }
 .footer a:hover { color: var(--white); }
 
+/* ── Nav links ── */
+.nav-links { display: flex; gap: 8px; align-items: center; }
+.nav-cta-secondary {
+  background: transparent;
+  color: var(--ocean);
+  border: 1.5px solid var(--ocean);
+}
+.nav-cta-secondary:hover { background: var(--sky); }
+
+/* ── Booking ── */
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.booking-card {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1.5px solid rgba(26,111,163,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.booking-card-featured {
+  border-color: var(--gold);
+  box-shadow: 0 6px 28px rgba(212,160,23,0.18);
+}
+.booking-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.booking-logo { font-size: 2.2rem; }
+.booking-platform {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+.booking-desc { color: var(--mid); font-size: 0.9rem; line-height: 1.6; }
+.btn-outline {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 2px solid var(--ocean);
+  color: var(--ocean);
+  transition: background 0.2s, color 0.2s;
+  margin-top: 4px;
+}
+.btn-outline:hover { background: var(--ocean); color: var(--white); }
+.booking-card .btn-primary { margin-top: 4px; color: var(--dark); }
+
+/* ── Contact ── */
+.contact-inner { text-align: center; }
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ocean);
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: var(--radius);
+  border: 2px solid var(--ocean);
+  transition: background 0.2s, color 0.2s;
+}
+.contact-email:hover { background: var(--ocean); color: var(--white); }
+.contact-icon { font-size: 1.3rem; }
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .nav { padding: 0 20px; }
