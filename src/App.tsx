@@ -1,5 +1,6 @@
 const AIRBNB_URL = 'https://www.airbnb.com/rooms/1510938870969622013'
 const HOUFY_URL  = 'https://www.houfy.com/lodging/5br-corolla-oceanside-pool-hot-tub-game-room/249324'
+const VRBO_URL   = 'https://www.vrbo.com/4938792'
 const EMAIL      = 'beechwoodobx@yahoo.com'
 
 const HIGHLIGHTS = [
@@ -31,6 +32,14 @@ const AMENITIES = [
 
 const BOOKING_OPTIONS = [
   {
+    platform: 'Houfy',
+    logo: '🔑',
+    desc: 'Book through Houfy — a secure booking platform with lower fees than Airbnb, same great property.',
+    url: HOUFY_URL,
+    cta: 'Book on Houfy',
+    featured: true,
+  },
+  {
     platform: 'Airbnb',
     logo: '🏠',
     desc: 'Book with Airbnb\'s secure payment, guest protection, and instant booking.',
@@ -38,12 +47,11 @@ const BOOKING_OPTIONS = [
     cta: 'View on Airbnb',
   },
   {
-    platform: 'Houfy',
-    logo: '🔑',
-    desc: 'Book through Houfy — a secure booking platform with lower fees than Airbnb, same great property.',
-    url: HOUFY_URL,
-    cta: 'Book Direct on Houfy',
-    featured: true,
+    platform: 'VRBO',
+    logo: '🏖️',
+    desc: 'Book through VRBO — trusted vacation rental platform with secure payments and 24/7 support.',
+    url: VRBO_URL,
+    cta: 'View on VRBO',
   },
 ]
 
@@ -207,6 +215,8 @@ export default function App() {
           <a href={HOUFY_URL} target="_blank" rel="noreferrer">Houfy</a>
           {' · '}
           <a href={AIRBNB_URL} target="_blank" rel="noreferrer">Airbnb</a>
+          {' · '}
+          <a href={VRBO_URL} target="_blank" rel="noreferrer">VRBO</a>
           {' · '}
           <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
         </span>
