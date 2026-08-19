@@ -32,6 +32,13 @@ const AMENITIES = [
 
 const BOOKING_OPTIONS = [
   {
+    platform: 'Airbnb',
+    logo: '🏠',
+    desc: 'Book with Airbnb\'s secure payment, guest protection, and instant booking.',
+    url: AIRBNB_URL,
+    cta: 'Book on Airbnb',
+  },
+  {
     platform: 'Houfy',
     logo: '🔑',
     desc: 'Book through Houfy — a secure booking platform with lower fees than Airbnb, same great property.',
@@ -40,18 +47,11 @@ const BOOKING_OPTIONS = [
     featured: true,
   },
   {
-    platform: 'Airbnb',
-    logo: '🏠',
-    desc: 'Book with Airbnb\'s secure payment, guest protection, and instant booking.',
-    url: AIRBNB_URL,
-    cta: 'View on Airbnb',
-  },
-  {
     platform: 'VRBO',
     logo: '🏖️',
     desc: 'Book through VRBO — trusted vacation rental platform with secure payments and 24/7 support.',
     url: VRBO_URL,
-    cta: 'View on VRBO',
+    cta: 'Book on VRBO',
   },
 ]
 
